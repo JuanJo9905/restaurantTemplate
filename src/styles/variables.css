@@ -1,0 +1,44 @@
+:root {
+  /* Paleta de colores de parrilla */
+  --flame-orange: #ff4500;
+  --ember-red: #dc143c;
+  --charcoal-black: #2f1b14;
+  --smoke-gray: #696969;
+  --meat-brown: #8b4513;
+  --grill-gold: #d2691e;
+  
+  /* Gradientes temáticos */
+  --fire-gradient: linear-gradient(45deg, #ff4500, #d2691e, #ff6347);
+  --ember-gradient: linear-gradient(135deg, #dc143c, #8b0000);
+  --smoke-gradient: linear-gradient(180deg, #696969, #2f2f2f);
+  
+  /* Espaciados */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  
+  /* Tipografía */
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+  
+  /* Sombras temáticas */
+  --shadow-fire: 0 0 20px rgba(255, 69, 0, 0.3);
+  --shadow-ember: 0 0 15px rgba(220, 20, 60, 0.4);
+  --shadow-smoke: 0 8px 32px rgba(105, 105, 105, 0.2);
+}

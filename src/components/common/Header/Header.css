@@ -1,0 +1,125 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(47, 27, 20, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: var(--transition);
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(210, 105, 30, 0.2);
+}
+
+.header--scrolled {
+  background: rgba(47, 27, 20, 0.95);
+  border-bottom-color: rgba(210, 105, 30, 0.4);
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--fire-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.header__logo:hover {
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.header__logo-icon {
+  animation: flameGlow 2s ease-in-out infinite alternate;
+  width: 36px;
+  height: 36px;
+}
+
+@keyframes flameGlow {
+  0% { filter: drop-shadow(0 0 5px rgba(255, 69, 0, 0.5)); }
+  100% { filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.8)); }
+}
+
+.header__navigation {
+  display: flex;
+  gap: 35px;
+}
+
+.header__nav-button {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: var(--transition);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+.header__nav-button:hover,
+.header__nav-button--active {
+  color: var(--fire-color);
+  background: rgba(255, 69, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.header__mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  transition: var(--transition);
+}
+
+.header__mobile-menu-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.header__mobile-menu-button:hover {
+  background: rgba(255, 69, 0, 0.1);
+  color: var(--fire-color);
+}
+
+@media (max-width: 768px) {
+  .header__navigation {
+    display: none;
+  }
+  
+  .header__mobile-menu-button {
+    display: block;
+  }
+  
+  .header__logo {
+    font-size: 1.6rem;
+  }
+  
+  .header__logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__logo {
+    font-size: 1.4rem;
+  }
+  
+  .header__logo-icon {
+    width: 28px;
+    height: 28px;
+  }
+}

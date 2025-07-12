@@ -1,0 +1,274 @@
+.menu-page {
+  padding-top: 100px;
+  min-height: 100vh;
+  background: var(--bg-warm);
+}
+
+.menu-page__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.menu-page__title {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-page__description {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.menu-page__category-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.menu-page__category-button {
+  padding: 15px 25px;
+  background: transparent;
+  color: var(--text-dark);
+  border: 2px solid var(--primary-color);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-page__category-button--active,
+.menu-page__category-button:hover {
+  background: var(--fire-gradient);
+  color: rgb(238, 102, 102);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-fire);
+}
+
+.menu-page__category-emoji {
+  font-size: 1.2rem;
+}
+
+.menu-page__content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-page__category-title {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.menu-page__category-icon {
+  font-size: 2rem;
+}
+
+.menu-page__items {
+  display: grid;
+  gap: 25px;
+}
+
+.menu-page__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.menu-page__item-info {
+  flex: 1;
+}
+
+.menu-page__item-name {
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.menu-page__item-description {
+  color: var(--accent-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.menu-page__item-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.menu-page__item-badge {
+  background: rgba(210, 105, 30, 0.1);
+  color: var(--primary-color);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(210, 105, 30, 0.3);
+}
+
+.menu-page__item-price {
+  min-width: 70px;
+  text-align: right;
+}
+
+.menu-page__item-price-value {
+  font-size: 1.4rem;
+  color: var(--fire-color);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.menu-page__grill-info {
+  margin-top: 80px;
+  padding: 50px;
+  background: linear-gradient(135deg, rgba(210, 105, 30, 0.1), rgba(255, 69, 0, 0.05));
+  border-radius: 25px;
+  border: 2px solid rgba(210, 105, 30, 0.2);
+  text-align: center;
+}
+
+.menu-page__grill-title {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+}
+
+.menu-page__info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.menu-page__info-item {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.menu-page__info-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.menu-page__info-item svg {
+  color: var(--fire-color);
+  margin-bottom: 20px;
+}
+
+.menu-page__info-item-title {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.menu-page__info-item-description {
+  color: var(--accent-color);
+  line-height: 1.6;
+}
+
+.menu-page__cooking-levels {
+  margin-top: 60px;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.menu-page__cooking-title {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+}
+
+.menu-page__cooking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.menu-page__cooking-item {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background: #faf7f2;
+  transition: var(--transition);
+}
+
+.menu-page__cooking-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.menu-page__cooking-color {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.menu-page__cooking-item-title {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.menu-page__cooking-item-description {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .menu-page__title {
+    font-size: 2.2rem;
+  }
+  
+  .menu-page__category-title {
+    font-size: 2rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .menu-page__grill-info {
+    padding: 30px 20px;
+  }
+  
+  .menu-page__info-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .menu-page__info-item {
+    padding: 20px;
+  }
+  
+  .menu-page__cooking-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
