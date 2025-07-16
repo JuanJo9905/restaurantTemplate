@@ -6,7 +6,6 @@ import Home from './pages/Home/Home';
 import MenuPage from './pages/MenuPage/MenuPage';
 import './styles/globals.css';
 
-// Mobile Menu Component
 const MobileMenu = ({ isOpen, toggleMenu, navigate }) => {
   if (!isOpen) return null;
 
@@ -70,7 +69,6 @@ const App = () => {
   };
 
   useEffect(() => {
-    // Smooth scrolling para los enlaces de la página principal
     if (currentPage === 'home') {
       const links = document.querySelectorAll('a[href^="#"]');
       links.forEach(link => {
